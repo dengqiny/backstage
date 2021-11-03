@@ -1,6 +1,8 @@
 <template>
   <!-- 模块主文件设置固定的结构 -->
-  <div>
+  <div class="conta">
+
+    <router-view></router-view>
   </div>
 </template>
 
@@ -45,4 +47,9 @@
 
 <style lang='scss' scoped>
   // 使用scss格式
+  .conta {
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+  }
 </style>

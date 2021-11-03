@@ -1,12 +1,16 @@
 <template>
   <!-- 模块主文件设置固定的结构 -->
   <div>
+    <router-view></router-view>
   </div>
 </template>
 
 
 
 <script>
+  import {
+    getUsername
+  } from '@/api/user'
   export default {
     // 项目主文件名称
     props: [],
@@ -15,7 +19,9 @@
       return {};
     },
     //方法 函数写这里
-    methods: {},
+    methods: {
+
+    },
     //计算属性
     computed: {},
     //侦听器
@@ -26,7 +32,9 @@
     //组件创建之前
     beforeCreate() {},
     //组件创建之后
-    created() {},
+    created() {
+      // getUsername()
+    },
     //页面渲染之前
     beforeMount() {},
     //页面渲染之后

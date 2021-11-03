@@ -1,9 +1,9 @@
 <template>
-  <div class="not-found">
-    <h1>啊哦！找不到相关页面o(╥﹏╥)o。</h1>
-    <router-link to>
-      <p @click="$router.back(-1)">返回上一级页面</p>
-    </router-link>
+  <!-- 模块主文件设置固定的结构 -->
+
+  <div class="header">
+    <span>{{ userdata.username }}</span>
+    <button class="headerbtn" @click="deluser">退出</button>
   </div>
 </template>
 
@@ -13,10 +13,18 @@ export default {
   props: [],
   components: {},
   data() {
-    return {};
+    return {
+      userdata: [],
+    };
   },
   //方法 函数写这里
-  methods: {},
+  methods: {
+    deluser() {
+      sessionStorage.clear();
+      location.reload();
+      this.$router.push('/login');
+    },
+  },
   //计算属性
   computed: {},
   //侦听器
@@ -27,7 +35,9 @@ export default {
   //组件创建之前
   beforeCreate() {},
   //组件创建之后
-  created() {},
+  created() {
+    this.userdata = this.$store.state.user;
+  },
   //页面渲染之前
   beforeMount() {},
   //页面渲染之后
@@ -44,23 +54,26 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.not-found {
+// 使用scss格式
+.header {
   width: 100%;
-  height: 100vh;
-  background-color: #6495ed;
+  height: 50px;
+  background: teal;
+
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
-  h1 {
-    margin: 0;
-    color: #fff;
+
+  .headerbtn {
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 1rem;
   }
-  a {
-    color: #e0ffff;
-    font-size: 14px;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
-      sans-serif;
-    transform: translateY(10px);
+
+  span {
+    margin-right: 60px;
+    font-size: 18px;
   }
 }
 </style>

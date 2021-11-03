@@ -1,6 +1,7 @@
 <template>
   <!-- 模块主文件设置固定的结构 -->
   <div>
+    <router-view></router-view>
   </div>
 </template>
 
@@ -15,7 +16,9 @@
       return {};
     },
     //方法 函数写这里
-    methods: {},
+    methods: {
+
+    },
     //计算属性
     computed: {},
     //侦听器

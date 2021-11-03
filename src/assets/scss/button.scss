@@ -1,0 +1,74 @@
+
+.btn {
+   display: inline-block; 
+   width: 110px;
+   height: 30px;
+   line-height: 30px;
+   text-align: center;
+   background-color:$colorD;
+   color: $colorG;
+   border: none;
+   cursor: pointer;
+   margin-right:26px ;
+}
+
+
+.btn-default {
+    display: inline-block; 
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color:#B0B0B0;
+    color: $colorG;
+    border: 1px solid $colorF;
+    
+    cursor: pointer;
+ }
+.btnenter{
+    display: inline-block; 
+    width: 110px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color:#B0B0B0;
+    color: $colorG;
+    border: 1px solid $colorF;
+    
+    cursor: pointer;
+    background-color: $colorR;
+}
+ .btn-large{
+    display: inline-block; 
+    width: 202px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color:$colorA;
+    color: $colorG;
+    border: 1px solid $colorF;
+    font-size: 18px ;
+    cursor: pointer;
+ }
+
+ .btn-huge {
+    display: inline-block; 
+    width: 300px;
+    height: 55px;
+    line-height: 55px;
+    text-align: center;
+    background-color:$colorA;
+    color: $colorG;
+    border: 1px solid $colorF;
+    font-size: 20px ;
+    cursor: pointer;
+ }
+
+ .btn-group {
+     .btn {
+         margin-right: 20px;
+         &:last-child {
+             margin-right: 0;;
+         }
+     }
+ }

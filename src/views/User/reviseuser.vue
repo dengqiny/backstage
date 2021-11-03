@@ -1,16 +1,21 @@
 <template>
   <!-- 模块主文件设置固定的结构 -->
   <div>
+    <h2>修改员工信息</h2>
+    <Modifyuser></Modifyuser>
   </div>
 </template>
 
 
 
 <script>
+  import Modifyuser from '@/components/modifyuser'
   export default {
     // 项目主文件名称
     props: [],
-    components: {},
+    components: {
+      Modifyuser
+    },
     data() {
       return {};
     },
@@ -45,4 +50,13 @@
 
 <style lang='scss' scoped>
   // 使用scss格式
+  h2 {
+    width: 95%;
+    margin: 0 auto;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
+  }
 </style>

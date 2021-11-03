@@ -1,6 +1,7 @@
 <template>
   <!-- 模块主文件设置固定的结构 -->
-  <div>
+  <div class="footer">
+    footer
   </div>
 </template>
 
@@ -45,4 +46,11 @@
 
 <style lang='scss' scoped>
   // 使用scss格式
+  .footer {
+    width: 100%;
+    height: 40px;
+    background: turquoise;
+    position: absolute;
+    bottom: 0;
+  }
 </style>

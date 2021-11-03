@@ -1,0 +1,66 @@
+.zhong {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  z-index: 1111;
+  .left {
+    height: 100%;
+    background-color: black;
+    overflow: hidden;
+    transition: all 1s ease ;
+
+    .sidebar2 {
+      height: 30px;
+      margin-top: 10px;
+      background-color: #281f1d;
+      color: white !important;
+      cursor: pointer;
+      line-height: 30px;
+    }
+    
+    .sidebar {
+      cursor: pointer;
+      height: 30px;
+      margin-top: 10px;
+      background-color: #585eaa;
+      color: white !important;
+      line-height: 30px;
+    }
+    h1{
+      height: 50px;
+      line-height: 50px;
+      background: #5189e4;
+      text-align: center;
+      color: aliceblue;
+      overflow:hidden;
+    }
+  }
+
+.right {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  background: #f6f5ec;
+  .header {
+    width: 100%;
+    height: 50px;
+    background-color: #2a5caa;
+    color: white;
+    line-height: 5vh;
+
+  }
+  .footer {
+    width: 100%;
+    height: 40px;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    background-color: #2a5caa;
+    position: absolute;
+    bottom: 0;
+    z-index: 9999;
+  }
+}
+  
+}
